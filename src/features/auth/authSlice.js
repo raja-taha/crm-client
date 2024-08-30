@@ -22,7 +22,7 @@ export const registerUser = createAsyncThunk(
         },
       };
       const response = await axios.post(
-        `${process.env.REACT_APP_API_URL}/user/register`,
+        `${process.env.REACT_APP_API_URL}/api/user/register`,
         userData,
         config
       );
@@ -39,7 +39,7 @@ export const loginUser = createAsyncThunk(
   async (userData, thunkAPI) => {
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_API_URL}/user/login`,
+        `${process.env.REACT_APP_API_URL}/api/user/login`,
         userData
       );
       return response.data; // This will be the payload of fulfilled state

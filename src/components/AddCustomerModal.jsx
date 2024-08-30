@@ -77,7 +77,7 @@ const AddCustomerModal = ({ isOpen, onClose, onCustomerAdded }) => {
         },
       };
       await axios.post(
-        `${process.env.REACT_APP_API_URL}/customer/`,
+        `${process.env.REACT_APP_API_URL}/api/customer/`,
         formData,
         config
       );

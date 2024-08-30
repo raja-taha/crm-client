@@ -29,7 +29,7 @@ const Customer = () => {
           },
         };
         const response = await axios.get(
-          `${process.env.REACT_APP_API_URL}/customer/${id}`,
+          `${process.env.REACT_APP_API_URL}/api/customer/${id}`,
           config
         );
         setCustomerData(response.data);
@@ -91,7 +91,7 @@ const Customer = () => {
         },
       };
       await axios.put(
-        `${process.env.REACT_APP_API_URL}/customer/${id}`,
+        `${process.env.REACT_APP_API_URL}/api/customer/${id}`,
         customerData,
         config
       );
@@ -110,7 +110,7 @@ const Customer = () => {
         },
       };
       await axios.delete(
-        `${process.env.REACT_APP_API_URL}/customer/${id}`,
+        `${process.env.REACT_APP_API_URL}/api/customer/${id}`,
         config
       );
       toast.success("Customer deleted successfully.");
