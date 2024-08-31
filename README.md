@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# React CRM Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the client-side code for a CRM (Customer Relationship Management) system built using React. The application allows users to manage customers efficiently and is designed to run on AWS EC2 for scalability and reliability.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Customer Management:** Add, view, edit, and delete customer records.
+- **Responsive Design:** Optimized for both desktop and mobile devices.
+- **Secure Authentication:** Uses JWT for user authentication and authorization.
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before you begin, ensure you have the following installed on your development machine:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Node.js** (version 14.x or higher)
+- **npm** (version 6.x or higher)
+- **Git**
+- **AWS CLI** (for deployment and management of EC2)
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the Repository:**
 
-### `npm run build`
+   Clone this repository to your local machine using the following command:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/raja-taha/crm-client.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Navigate to the Project Directory:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   cd crm-client
 
-### `npm run eject`
+3. **Install Dependencies:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   Install the required npm packages by running:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Environment Variables
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   The application requires certain environment variables to be set. These can be defined in a .env file in the root directory:
+   ```bash
+   REACT_APP_API_URL=http://your-backend-api-url
+   ```
 
-## Learn More
+## Running the Application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To run the application locally:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Start the Development Server:**
 
-### Code Splitting
+   Run the following command to start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   npm start
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
