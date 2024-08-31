@@ -85,7 +85,8 @@ const AddCustomerModal = ({ isOpen, onClose, onCustomerAdded }) => {
       onCustomerAdded();
       onClose();
     } catch (error) {
-      toast.error("Failed to add customer.");
+      setError(error);
+      toast.error(error);
     }
   };
 

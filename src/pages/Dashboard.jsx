@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import AddCustomerModal from "../components/AddCustomerModal";
 import Customer from "../components/Customer";
 import axios from "axios";
@@ -13,7 +13,7 @@ const Dashboard = () => {
 
   const { token } = useSelector((state) => state.auth);
 
-  const fetchCustomers = async () => {
+  const fetchCustomers = useCallback(async () => {
     try {
       setIsLoading(true);
       const config = {
@@ -31,11 +31,11 @@ const Dashboard = () => {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [token]); // dependencies array
 
   useEffect(() => {
     fetchCustomers();
-  }, [token]);
+  }, [fetchCustomers]);
 
   const handleCustomerAdded = () => {
     fetchCustomers();
