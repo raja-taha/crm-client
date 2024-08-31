@@ -23,17 +23,6 @@ Before you begin, ensure you have the following installed on your development ma
 
 This repository contains the client-side code for a CRM (Customer Relationship Management) system built using React. The application allows users to manage customers efficiently and is designed to run on AWS EC2 for scalability and reliability.
 
-## Table of Contents
-
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
-- [Deployment](#deployment)
-- [Environment Variables](#environment-variables)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features
 
 - **Customer Management:** Add, view, edit, and delete customer records.
