@@ -24,12 +24,12 @@ Before you begin, ensure you have the following installed on your development ma
    Clone this repository to your local machine using the following command:
 
    ```bash
-   git clone https://github.com/your-username/react-crm-client.git
+   git clone https://github.com/raja-taha/crm-client.git
 
 2. **Navigate to the Project Directory:**
 
    ```bash
-   cd react-crm-client
+   cd crm-client
 
 3. **Install Dependencies:**
 
