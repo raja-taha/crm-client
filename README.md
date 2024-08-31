@@ -40,10 +40,10 @@ Before you begin, ensure you have the following installed on your development ma
 
 ## Environment Variables
 
-The application requires certain environment variables to be set. These can be defined in a .env file in the root directory:
-
+   The application requires certain environment variables to be set. These can be defined in a .env file in the root directory:
    ```bash
    REACT_APP_API_URL=http://your-backend-api-url
+   ```
 
 ## Running the Application
 
