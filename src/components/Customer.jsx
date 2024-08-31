@@ -8,7 +8,7 @@ const Customer = ({ customer }) => {
   };
   return (
     <div
-      className="grid grid-cols-3 my-2 p-3 border border-gray-300 rounded cursor-pointer hover:shadow-md"
+      className="grid grid-cols-1 md:grid-cols-3 my-2 p-3 border border-gray-300 rounded cursor-pointer hover:shadow-md"
       onClick={handleClick}
     >
       <p>

@@ -29,7 +29,10 @@ const Modal = ({ isOpen, onClose, onReset, children }) => {
       role="dialog"
       aria-modal="true"
     >
-      <div ref={modalRef} className="bg-white p-5 rounded-lg w-[60%] relative">
+      <div
+        ref={modalRef}
+        className="bg-white p-5 rounded-lg w-[90%] h-[80%] md:h-[90%] md:w-[60%] relative overflow-y-scroll"
+      >
         <button
           className="absolute top-2 right-2 w-10"
           onClick={() => {

@@ -15,8 +15,8 @@ const Header = () => {
     navigate("/login");
   };
   return (
-    <header className="border-b-2 border-opacity-30 border-b-black h-[50px] md:h-[80px] flex items-center relative">
-      <div className="w-[80%] mx-auto text-center md:flex justify-between items-center">
+    <header className="border-b-2 border-opacity-30 border-b-black h-[100px] md:h-[80px] flex items-center relative">
+      <div className="w-[80%] mx-auto text-center flex flex-col md:flex-row md:justify-between items-center">
         <Link to={"/"} className="text-[24px] font-bold tracking-wide">
           Admin Dashboard
         </Link>
@@ -26,13 +26,13 @@ const Header = () => {
               to={"/register"}
               className="flex items-center justify-center text-white p-2 hover:bg-opacity-70 bg-black rounded"
             >
-              <span>Add Users</span>
+              Add Users
             </Link>
             <Link
               onClick={handleLogout}
               className="flex items-center justify-center text-white p-2 hover:bg-opacity-70 bg-black rounded"
             >
-              <img src={logoutIcon} alt="logout" width={30} />
+              <img src={logoutIcon} alt="logout" className="w-5 md:w-6" />
               <span className="ml-2">Logout</span>
             </Link>
           </div>
